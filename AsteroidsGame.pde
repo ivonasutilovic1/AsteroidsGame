@@ -1,8 +1,8 @@
 public Star [] galaxy = new Star [700];
-public Spaceship ward = new Spaceship ();
+public Spaceship will = new Spaceship ();
 ArrayList <Asteroid> field = new ArrayList <Asteroid> ();
 int fieldlength=40;
-Bullet bill = new Bullet(ward);
+Bullet bill = new Bullet(will);
 
 ArrayList <Bullet> billy = new ArrayList <Bullet> ();
 
@@ -68,55 +68,55 @@ public void draw(){
  
  
  
- if(dist((float)ward.getXCenter(), (float)ward.getYCenter(), (float)field.get(i).getXCenter(), (float)field.get(i).getYCenter())<30){
+ if(dist((float)will.getXCenter(), (float)will.getYCenter(), (float)field.get(i).getXCenter(), (float)field.get(i).getYCenter())<30){
  
  field.remove(field.get(i));
  fieldlength--;
  
- if(ward.getB()==255){
+ if(will.getB()==255){
  
- ward.setR(0);
- ward.setG(255);
- ward.setB(0);
+ will.setR(0);
+ will.setG(255);
+ will.setB(0);
  }
  else{
- ward.setR(ward.getR()+8);
- ward.setG(ward.getG()-8);
+ will.setR(ward.getR()+8);
+ will.setG(ward.getG()-8);
  
  }
- if(ward.getR()>255)
- ward.setCorners();
+ if(will.getR()>255)
+ will.setCorners();
  }
  }
  
  
 
  
- ward.show();
- ward.move();
+ will.show();
+ will.move();
  if(keyPressed){
  if(key=='w'){
- ward.accelerate(0.1);
+ will.accelerate(0.1);
  }
  if(key=='s'){
- ward.accelerate(-0.1);
+ will.accelerate(-0.1);
  }
  if(key=='a'){
- ward.setDirection(ward.getDirection()+2);
+ will.setDirection(will.getDirection()+2);
  }
  if(key=='d'){
- ward.setDirection(ward.getDirection()-2);
+ will.setDirection(will.getDirection()-2);
  }
  if(key=='r'){
- billy.add(new Bullet(ward));
+ billy.add(new Bullet(will));
  }
  if(key==' '){
  
- ward.setXSpeed(0);
- ward.setYSpeed(0);
- ward.setXCenter((int)(Math.random()*1000));
- ward.setYCenter((int)(Math.random()*1000));
- ward.setDirection((int)Math.random()*360);
+ will.setXSpeed(0);
+ will.setYSpeed(0);
+ will.setXCenter((int)(Math.random()*1000));
+ will.setYCenter((int)(Math.random()*1000));
+ will.setDirection((int)Math.random()*360);
  }
  }
 
