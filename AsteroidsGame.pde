@@ -80,8 +80,8 @@ public void draw(){
  will.setB(0);
  }
  else{
- will.setR(ward.getR()+8);
- will.setG(ward.getG()-8);
+ will.setR(will.getR()+8);
+ will.setG(will.getG()-8);
  
  }
  if(will.getR()>255)
