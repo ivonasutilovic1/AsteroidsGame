@@ -5,10 +5,10 @@ public class Star //note that this class does NOT extend Floater
  public Star(){
  x = (int)(Math.random()*1000);
  y = (int)(Math.random()*1000);
- size = (int)(Math.random()*3);
- r = (int)(Math.random()*255);
- g = (int)(Math.random()*255);
- b = (int)(Math.random()*255);
+ size = (int)(Math.random()*7);
+ r = (int)(Math.random()*10);
+ g = (int)(Math.random()*10);
+ b = (int)(Math.random()*10);
 
  }
  
