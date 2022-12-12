@@ -1,7 +1,7 @@
 public class Spaceship extends Floater { 
  Spaceship(){
  corners=4;
- r=g=b=255;
+ r=g=b=250;
  myCenterX=350;
  myCenterY=350;
  myXspeed=0;
