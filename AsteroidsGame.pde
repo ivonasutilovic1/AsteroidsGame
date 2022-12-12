@@ -2,7 +2,7 @@ public Star [] galaxy = new Star [700];
 public Spaceship will = new Spaceship ();
 ArrayList <Asteroid> field = new ArrayList <Asteroid> ();
 int fieldlength=40;
-Bullet bill = new Bullet(will);
+Bullet billy = new Bullet(will);
 
 ArrayList <Bullet> billy = new ArrayList <Bullet> ();
 
